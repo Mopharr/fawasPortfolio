@@ -4,6 +4,10 @@
   min-height: 100vh;
   background-color: #fff;
   padding: 2em 1em 0 1em;
+  background: url(../../public/line.png), url(../../public/line2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav {
@@ -34,7 +38,7 @@
   gap: 0.6em;
 }
 .navItem li {
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -42,4 +46,103 @@
   letter-spacing: 0.03em;
   color: rgba(43, 43, 43, 0.5);
   list-style: none;
+}
+
+.header {
+  max-width: 1600px;
+  width: 100%;
+  margin: 2em auto;
+}
+
+.mode {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.modeIcon {
+  cursor: pointer;
+}
+.zig {
+  width: 84.82px;
+  height: 17.67px;
+  margin-bottom: 5em;
+}
+.headerContent {
+  max-width: 1103px;
+  width: 100%;
+  margin: 1em auto;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+  color: rgba(43, 43, 43, 0.5);
+}
+.headerText h3 {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.03em;
+}
+.headerText h1 {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 74px;
+  letter-spacing: 0.03em;
+  color: #2b2b2b;
+}
+.headerText .line {
+  text-decoration: line-through;
+}
+
+.headerText .back {
+  background-color: black;
+  color: #fff;
+}
+.headerText p {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: rgba(43, 43, 43, 0.5);
+  margin-top: 0.5em;
+}
+.headerContent .round {
+  width: 114.04px;
+  height: 113.69px;
+  margin-top: 1em;
+}
+
+.header h2 {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 74px;
+  letter-spacing: -0.015em;
+  opacity: 0.8;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: transparent;
+  background: rgba(43, 43, 43, 0.3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.ring {
+  width: 493.14px;
+  height: 493.14px;
+  
 }

@@ -17,7 +17,7 @@ const Loading = () => {
   return (
     <div className={styles.loading} ref={back}>
       <div className={styles.loadContent}>
-        <Image src="/img (9).svg" alt="" width={22} height={18} />
+        <Image src="/img9.svg" alt="" width={22} height={18} />
         <h1>Hi, I’m Fawaz...</h1>
       </div>
     </div>
