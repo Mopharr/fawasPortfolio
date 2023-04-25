@@ -9,6 +9,8 @@ import {
   BsFillMoonFill,
   BsFillArrowUpRightCircleFill,
 } from "react-icons/bs";
+import { AiFillLinkedin, AiFillBehanceSquare } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -86,52 +88,82 @@ export default function Home() {
             <h1>Work</h1>
 
             <div className={styles.workCap}>
-              <div className={styles.workTitle}>
-                <h2>Scoop</h2>
-                <BsFillArrowUpRightCircleFill />
-              </div>
               <div className={styles.workCon}>
-                <p>
-                  Scoop is an iOS app, it serves its users, up-to-date global
-                  news or happenings (visually & auditorily) based on the users’
-                  interests...
-                </p>
+                <div className={styles.workConFirst}>
+                  <div className={styles.workTitle}>
+                    <h2>Scoop</h2>
+                    <BsFillArrowUpRightCircleFill className={styles.workIcon} />
+                  </div>
+                  <p>
+                    Scoop is an iOS app, it serves its users, up-to-date global
+                    news or happenings (visually & auditorily) based on the
+                    users’ interests...
+                  </p>
+                  <button>Product Design</button>
+                </div>
               </div>
-              <button>Product Design</button>
-              <Image src="/img4.svg" width={22} height={22} alt="" />
+              <Image src="/img7.svg" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
-              <div className={styles.workTitle}>
-                <h2>Scoop</h2>
-                <BsFillArrowUpRightCircleFill />
-              </div>
               <div className={styles.workCon}>
-                <p>
-                  Scoop is an iOS app, it serves its users, up-to-date global
-                  news or happenings (visually & auditorily) based on the users’
-                  interests...
-                </p>
-                <Image src="/img3.svg" width={22} height={22} alt="" />
+                <div className={styles.workConSec}>
+                  <Image src="/ring2.svg" width={22} height={22} alt="" />
+                </div>
+                <div className={styles.workConFirst}>
+                  <div className={styles.workTitle}>
+                    <h2>Scoop</h2>
+                    <BsFillArrowUpRightCircleFill className={styles.workIcon} />
+                  </div>
+                  <p>
+                    Scoop is an iOS app, it serves its users, up-to-date global
+                    news or happenings (visually & auditorily) based on the
+                    users’ interests...
+                  </p>
+                  <button>Research</button>
+                </div>
               </div>
-              <button>Product Design</button>
-              <Image src="/img4.svg" width={22} height={22} alt="" />
+              <Image src="/img5.svg" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
-              <div className={styles.workTitle}>
-                <h2>Scoop</h2>
-                <BsFillArrowUpRightCircleFill />
-              </div>
               <div className={styles.workCon}>
-                <p>
-                  Scoop is an iOS app, it serves its users, up-to-date global
-                  news or happenings (visually & auditorily) based on the users’
-                  interests...
-                </p>
+                <div className={styles.workConFirst}>
+                  <div className={styles.workTitle}>
+                    <h2>Scoop</h2>
+                    <BsFillArrowUpRightCircleFill className={styles.workIcon} />
+                  </div>
+                  <p>
+                    Scoop is an iOS app, it serves its users, up-to-date global
+                    news or happenings (visually & auditorily) based on the
+                    users’ interests...
+                  </p>
+                  <button>UI Design</button>
+                </div>
               </div>
-              <button>Product Design</button>
               <Image src="/img4.svg" width={22} height={22} alt="" />
             </div>
           </section>
+
+          <div className={styles.conCov}>
+            <div className={styles.connect}>
+              <Image
+                src="/img3.svg"
+                width={22}
+                height={22}
+                alt=""
+                className={styles.conImage}
+              />
+              <h1>Let&apos;s Connect</h1>
+              <p>
+                Get in touch for opportunities or say hi if you would love to
+                collaborate.
+              </p>
+              <div className={styles.social}>
+                <AiFillLinkedin className={styles.socialIcon} />
+                <MdEmail className={styles.socialIcon} />
+                <AiFillBehanceSquare className={styles.socialIcon} />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
