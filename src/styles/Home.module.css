@@ -2,12 +2,24 @@
 
 .main {
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: #fff;
-  padding: 2em 1em 0 1em;
   background: url(../../public/line.png), url(../../public/line2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #fff;
+  position: fixed;
+  /* padding: 0 0 3em; */
+}
+.mainCon {
+  background: transparent;
+  position: relative;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  padding: 2em 1em 0 1em;
 }
 
 .nav {
@@ -17,6 +29,7 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
+  position: sticky;
 }
 
 .nav a {
@@ -123,26 +136,30 @@
   margin-top: 1em;
 }
 
-.header h2 {
+.headerLast {
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 74px;
   letter-spacing: -0.015em;
-  opacity: 0.8;
-  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: transparent;
-  background: rgba(43, 43, 43, 0.3);
+  background: #2b2b2b4d;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  text-fill-color: #fff;
+  opacity: 0.8;
+  width: 80%;
+  margin-left: auto;
 }
 
 .ring {
   width: 493.14px;
   height: 493.14px;
-  
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+  z-index: 11;
 }
