@@ -71,165 +71,67 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 2em;
   flex-direction: column;
+  border-right: 3px dashed rgba(43, 43, 43, 0.5);
+  width: 35px;
 }
-
 
 .modeIcon {
-  color: red;
-  cursor: pointer;
-  font-size: 50px;
-}
-.modeActive {
-  color: green;
+  color: #2b2b2b;
   cursor: pointer;
   font-size: 25px;
 }
+.modeActive {
+  color: rgba(43, 43, 43, 0.5);
+  cursor: pointer;
+  font-size: 25px;
+}
+
 .zig {
   width: 84.82px;
   height: 17.67px;
   margin-bottom: 5em;
 }
-.headerContent {
-  max-width: 1103px;
+.about {
+  max-width: 1167px;
   width: 100%;
-  margin: 1em auto;
-}
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.5em;
-  color: rgba(43, 43, 43, 0.5);
-}
-.headerText h3 {
-  font-family: "Clash Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 55px;
-  letter-spacing: 0.03em;
-}
-.headerText h1 {
-  font-family: "Clash Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 74px;
-  letter-spacing: 0.03em;
-  color: #2b2b2b;
-}
-.headerText .line {
-  text-decoration: line-through;
-}
-
-.headerText .back {
-  background-color: black;
-  color: #fff;
-}
-.headerText p {
-  font-family: "Clash Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: rgba(43, 43, 43, 0.5);
-  margin-top: 0.5em;
-}
-.headerContent .round {
-  width: 114.04px;
-  height: 113.69px;
+  margin: auto;
   margin-top: 1em;
-}
-
-.headerLast {
-  font-family: "Clash Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 74px;
-  letter-spacing: -0.015em;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: transparent;
-  background: #2b2b2b4d;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #fff;
-  background-clip: text;
-  text-fill-color: #fff;
-  opacity: 0.8;
-  width: 80%;
-  margin-left: auto;
-}
-
-.ring {
-  width: 493.14px;
-  height: 493.14px;
-  position: absolute;
-  bottom: -10%;
-  right: 0%;
-  z-index: 11;
-}
-
-.work {
-  margin: 2em auto;
-  max-width: 1103px;
-  width: 100%;
-}
-
-.work h1 {
-  font-family: "Clash Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: rgba(43, 43, 43, 0.5);
-  margin-bottom: 5em;
-}
-.workCap {
-  margin-bottom: 6em;
-}
-
-.workTitle {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.5em;
-  color: #2b2b2b;
-  margin-bottom: 1em;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.workCap h2 {
+.aboutImage {
+  width: 516px;
+  height: 516px;
+  background-color: burlywood;
+  position: relative;
+}
+.aboutImage img {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 516px;
+  height: 516px;
+}
+
+.aboutText {
+  width: calc(96% - 516px);
+}
+
+.aboutText h2 {
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
   line-height: 55px;
   letter-spacing: 0.03em;
-}
-.workIcon {
-  font-size: 30px;
+  color: #2b2b2b;
 }
 
-.workCon {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.workConFirst,
-.workConSec {
-  width: 50%;
-}
-
-.workCap .workConSec img {
-  object-fit: contain;
-  width: 292.87px;
-  height: 300px;
-}
-.workCap p {
+.aboutText p {
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
@@ -237,29 +139,27 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: rgba(43, 43, 43, 0.5);
-  margin-bottom: 2em;
+}
+.aboutText p span {
+  color: #2b2b2b;
+}
+.cont {
+  max-width: 1167px;
+  width: 100%;
+  margin: auto;
 }
 
-.workCap button {
-  width: 180px;
-  height: 40px;
-  background: rgba(43, 43, 43, 0.05);
+.cont p {
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2b2b2b;
-  margin-bottom: 4em;
-  border: none;
-  outline: none;
+  color: rgba(43, 43, 43, 0.5);
 }
-
-.workCap img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+.cont p span {
+  color: #2b2b2b;
 }
 
 .conCov {
@@ -280,7 +180,7 @@
   top: -200%;
   right: 0;
   width: 309.46px;
-  height: 300px
+  height: 300px;
 }
 .connect h1 {
   font-family: "Clash Grotesk";
@@ -311,5 +211,5 @@
 
 .socialIcon {
   font-size: 60px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }

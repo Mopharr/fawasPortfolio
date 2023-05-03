@@ -14,7 +14,7 @@ import { MdEmail } from "react-icons/md";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ mode, handleMode }: any) {
   return (
     <>
       <Head>
@@ -31,9 +31,27 @@ export default function Home() {
 
           <header className={styles.header}>
             <div className={styles.mode}>
-              <BsFillSunFill className={styles.modeIcon} />
-              <BsFillMoonFill className={styles.modeIcon} />
+              <BsFillSunFill
+                onClick={handleMode}
+                className={`${mode ? styles.modeIcon : styles.modeActive}`}
+              />
+              <BsFillMoonFill
+                onClick={handleMode}
+                className={`${mode ? styles.modeIcon : styles.modeActive}`}
+              />
             </div>
+
+            {mode ? (
+              <BsFillSunFill
+                onClick={handleMode}
+                className={mode ? styles.modeActive : styles.modeIcon}
+              />
+            ) : (
+              <BsFillMoonFill
+                onClick={handleMode}
+                className={mode ? styles.modeIcon : styles.modeActive}
+              />
+            )}
 
             <div className={styles.headerContent}>
               <Image
