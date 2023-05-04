@@ -7,9 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const handleMode = () => {
     setMode((prev) => !prev);
-
-    console.log(mode);
   };
 
-  return <Component {...pageProps} mood={mode} handleMode={handleMode} />;
+  return <Component {...pageProps} mode={mode} handleMode={handleMode} />;
 }

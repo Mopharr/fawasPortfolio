@@ -24,44 +24,60 @@ export default function Home({ mode, handleMode }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={`${mode ? styles.mainActive : styles.main}`}>
         <div className={styles.mainCon}>
           <Loading />
-          <Nav />
+          <Nav mode={mode} />
 
           <header className={styles.header}>
-            <div className={styles.mode}>
-              <BsFillSunFill
-                onClick={handleMode}
-                className={`${mode ? styles.modeIcon : styles.modeActive}`}
-              />
-              <BsFillMoonFill
-                onClick={handleMode}
-                className={`${mode ? styles.modeIcon : styles.modeActive}`}
-              />
-            </div>
-
             {mode ? (
-              <BsFillSunFill
-                onClick={handleMode}
-                className={mode ? styles.modeActive : styles.modeIcon}
-              />
+              <div className={styles.darkModee}>
+                <BsFillMoonFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeActive : styles.modeIcon}`}
+                />
+                <BsFillSunFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeIcon : styles.modeActive}`}
+                />
+              </div>
             ) : (
-              <BsFillMoonFill
-                onClick={handleMode}
-                className={mode ? styles.modeIcon : styles.modeActive}
-              />
+              <div className={styles.mode}>
+                <BsFillMoonFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeActive : styles.modeIcon}`}
+                />
+                <BsFillSunFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeIcon : styles.modeActive}`}
+                />
+              </div>
             )}
 
             <div className={styles.headerContent}>
-              <Image
-                src="/zig.svg"
-                alt=""
-                width={20}
-                height={22}
-                className={styles.zig}
-              />
-              <div className={styles.headerText}>
+              {mode ? (
+                <Image
+                  src="/darkZig.svg"
+                  alt=""
+                  width={20}
+                  height={22}
+                  className={styles.zig}
+                />
+              ) : (
+                <Image
+                  src="/zig.svg"
+                  alt=""
+                  width={20}
+                  height={22}
+                  className={styles.zig}
+                />
+              )}
+
+              <div
+                className={`${
+                  mode ? styles.darkHeaderContent : styles.headerText
+                }`}
+              >
                 <div className={styles.title}>
                   <h3>Hi, I’m Fawaz.</h3>
                   <Image src="" alt="" width={20} height={22} />
@@ -81,22 +97,41 @@ export default function Home({ mode, handleMode }: any) {
                   phenomenon.
                 </p>
               </div>
-
+              {mode ? (
+                <Image
+                  src="/darkRound.svg"
+                  alt=""
+                  width={20}
+                  height={22}
+                  className={styles.round}
+                />
+              ) : (
+                <Image
+                  src="/img1.svg"
+                  alt=""
+                  width={20}
+                  height={22}
+                  className={styles.round}
+                />
+              )}
+            </div>
+            {mode ? (
               <Image
-                src="/img1.svg"
+                src="/darkRing.svg"
                 alt=""
                 width={20}
                 height={22}
-                className={styles.round}
+                className={styles.ring}
               />
-            </div>
-            <Image
-              src="/ring.svg"
-              alt=""
-              width={20}
-              height={22}
-              className={styles.ring}
-            />
+            ) : (
+              <Image
+                src="/ring.svg"
+                alt=""
+                width={20}
+                height={22}
+                className={styles.ring}
+              />
+            )}
           </header>
           <h2 className={styles.headerLast}>
             THAT LAGOS ISLAND BOY THAT DESIGNS AWESOME STUFF

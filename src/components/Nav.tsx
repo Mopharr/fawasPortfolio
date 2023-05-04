@@ -2,9 +2,9 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
-const Nav = () => {
+const Nav = ({mode}: any) => {
   return (
-    <div className={styles.nav}>
+    <div className={`${mode ? styles.navAct : styles.nav}`}>
       <Link href="/">Fawas.</Link>
       <ul className={styles.navItem}>
         <li>
