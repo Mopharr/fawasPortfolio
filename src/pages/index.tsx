@@ -137,7 +137,7 @@ export default function Home({ mode, handleMode }: any) {
             THAT LAGOS ISLAND BOY THAT DESIGNS AWESOME STUFF
           </h2>
 
-          <section className={styles.work}>
+          <section className={`${mode ? styles.workAct : styles.work}`}>
             <h1>Work</h1>
 
             <div className={styles.workCap}>
@@ -197,7 +197,7 @@ export default function Home({ mode, handleMode }: any) {
           </section>
 
           <div className={styles.conCov}>
-            <div className={styles.connect}>
+            <div className={`${mode ? styles.conAct : styles.connect}`}>
               <Image
                 src="/img3.svg"
                 width={22}
