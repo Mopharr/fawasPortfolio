@@ -73,6 +73,26 @@ export default function Home({ mode, handleMode }: any) {
                 />
               )}
 
+              <div className={styles.starrCon}>
+                {mode ? (
+                  <Image
+                    src="/darkStar.svg"
+                    alt=""
+                    width={52}
+                    height={22}
+                    className={styles.sideStar}
+                  />
+                ) : (
+                  <Image
+                    src="/starr.svg"
+                    alt=""
+                    width={52}
+                    height={22}
+                    className={styles.sideStar}
+                  />
+                )}
+              </div>
+
               <div
                 className={`${
                   mode ? styles.darkHeaderContent : styles.headerText
@@ -80,7 +100,7 @@ export default function Home({ mode, handleMode }: any) {
               >
                 <div className={styles.title}>
                   <h3>Hi, I’m Fawaz.</h3>
-                  <Image src="" alt="" width={20} height={22} />
+                  <Image src="/wace.svg" alt="" width={40} height={40} />
                 </div>
                 <h1>
                   I Design, Listen To Hip-Hop, Speak Up For{" "}

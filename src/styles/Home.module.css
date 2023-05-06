@@ -91,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6em;
+  gap: 1em;
 }
 .navItem li {
   font-family: "Clash Grotesk";
@@ -150,7 +150,17 @@
 .zig {
   width: 84.82px;
   height: 17.67px;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
+}
+.starrCon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sideStar {
+  width: 55px;
+  height: 55px;
+  margin-left: auto;
 }
 .headerContent {
   max-width: 1103px;
@@ -417,6 +427,8 @@
   width: 100%;
   height: 350px;
   object-fit: cover;
+  position: relative;
+  z-index: 11;
 }
 
 .conCov {
@@ -439,7 +451,7 @@
 
 .conImage {
   position: absolute;
-  top: -200%;
+  top: -150%;
   right: 0;
   width: 309.46px;
   height: 300px;

@@ -8,7 +8,7 @@ import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillBehanceSquare } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
-const About = () => {
+const About = ({ mode, handleMode }: any) => {
   return (
     <>
       <Head>
@@ -18,19 +18,48 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={`${mode ? styles.mainActive : styles.main}`}>
         <div className={styles.mainCon}>
-          <Nav />
+          <Nav mode={mode} />
 
           <header className={styles.header}>
-            <div className={styles.mode}>
-              <BsFillSunFill className={styles.modeIcon} />
-              <BsFillMoonFill className={styles.modeIcon} />
-            </div>
+            {mode ? (
+              <div className={styles.darkModee}>
+                <BsFillMoonFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeActive : styles.modeIcon}`}
+                />
+                <BsFillSunFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeIcon : styles.modeActive}`}
+                />
+              </div>
+            ) : (
+              <div className={styles.mode}>
+                <BsFillMoonFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeActive : styles.modeIcon}`}
+                />
+                <BsFillSunFill
+                  onClick={handleMode}
+                  className={`${mode ? styles.modeIcon : styles.modeActive}`}
+                />
+              </div>
+            )}
 
             <div className={styles.about}>
-              <div className={styles.aboutText}>
-                <h2>As it happens, raised in Lagos, Nigeria.</h2>
+              <div className={styles.aboutPicss}>
+                <Image src="/fPic.svg" alt="" width={120} height={120} />
+                <Image src="/sPic.svg" alt="" width={120} height={120} />
+                <Image src="/tPic.svg" alt="" width={120} height={120} />
+              </div>
+
+              <div
+                className={`${
+                  mode ? styles.aboutActiveText : styles.aboutText
+                }`}
+              >
+                <h2>Design, Love For Hip-Hop, Raised In Lagos, Nigeria.</h2>
                 <p>
                   Hi, My name is Fawaz, nicknamed “Loopy” I’ll give you $20 if
                   you could pronounce both names right, hahahaha.
@@ -58,42 +87,37 @@ const About = () => {
                   <br />
                   <br />
                 </p>
-              </div>
-              <div className={styles.aboutImage}>
-                <Image src="/Fram.svg" width={100} height={100} alt="" />
+                <p>
+                  I am a Product designer who loves to solve problems. I’m a
+                  user-centered designer, who looks thoroughly into users’ minds
+                  while attempting to solve their problems. I am passionate
+                  about designing products that meet the business vision and
+                  users’ goals, and I also believe in the{" "}
+                  <span>aesthetic usability phenomenon.</span>
+                  <br />
+                  <br />
+                  Since my Product design career started. I’ve worked as a
+                  freelancer, as a contractor, and also as a fulltime product
+                  designer. Currently, I work as a product designer at{" "}
+                  <span> Zercom Systems</span>, a Software technology firm that
+                  develops and distributes technology solutions to
+                  organizations. I’m presently working on its prime products,{" "}
+                  <span>Tangerine LMS</span>
+                  (iterating on it for improvements in its usability) and
+                  <span>Terminoxx360</span> (building its mobile version).
+                  <br />
+                  <br />
+                  In this recent time, I see myself not just as a Product
+                  designer, but also a commentator, maybe because I observe a
+                  lot, and always express my opinion on things I see around me,
+                  on social media, and every other places.
+                </p>
               </div>
             </div>
 
-            <div className={styles.cont}>
-              <p>
-                I am a Product designer who loves to solve problems. I’m a
-                user-centered designer, who looks thoroughly into users’ minds
-                while attempting to solve their problems. I am passionate about
-                designing products that meet the business vision and users’
-                goals, and I also believe in the{" "}
-                <span>aesthetic usability phenomenon.</span>
-                <br />
-                <br />
-                Since my Product design career started. I’ve worked as a
-                freelancer, as a contractor, and also as a fulltime product
-                designer. Currently, I work as a product designer at{" "}
-                <span> Zercom Systems</span>, a Software technology firm that
-                develops and distributes technology solutions to organizations.
-                I’m presently working on its prime products,{" "}
-                <span>Tangerine LMS</span>
-                (iterating on it for improvements in its usability) and
-                <span>Terminoxx360</span> (building its mobile version).
-                <br />
-                <br />
-                In this recent time, I see myself not just as a Product
-                designer, but also a commentator, maybe because I observe a lot,
-                and always express my opinion on things I see around me, on
-                social media, and every other places.
-              </p>
-            </div>
           </header>
           <div className={styles.conCov}>
-            <div className={styles.connect}>
+            <div  className={`${mode ? styles.conAct : styles.connect}`}>
               <h1>Let&apos;s Connect</h1>
               <p>
                 Get in touch for opportunities or say hi if you would love to

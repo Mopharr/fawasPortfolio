@@ -13,6 +13,17 @@
   position: fixed;
   /* padding: 0 0 3em; */
 }
+.mainActive {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: url(../../public/darkLine.svg), url(../../public/darkLine2.svg),
+    #2b2b2b;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
 .mainCon {
   background: transparent;
   position: relative;
@@ -71,19 +82,36 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2em;
+  gap: 1em;
   flex-direction: column;
-  border-right: 3px dashed rgba(43, 43, 43, 0.5);
-  width: 35px;
+}
+
+.darkModee {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-direction: column;
 }
 
 .modeIcon {
-  color: #2b2b2b;
+  color: rgba(43, 43, 43, 0.5);
   cursor: pointer;
   font-size: 25px;
 }
 .modeActive {
-  color: rgba(43, 43, 43, 0.5);
+  color: #2b2b2b;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.darkModee .modeIcon {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 25px;
+}
+.darkModee .modeActive {
+  color: #fff;
   cursor: pointer;
   font-size: 25px;
 }
@@ -98,27 +126,25 @@
   width: 100%;
   margin: auto;
   margin-top: 1em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
-.aboutImage {
-  width: 516px;
-  height: 516px;
-  background-color: burlywood;
-  position: relative;
+.aboutPicss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
 }
-.aboutImage img {
-  position: absolute;
-  top: 7%;
-  left: 7%;
-  width: 516px;
-  height: 516px;
+.aboutPicss img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain ;
 }
 
 .aboutText {
-  width: calc(96% - 516px);
+  width: 100%;
+}
+.aboutActiveText {
+  width: 100%;
 }
 
 .aboutText h2 {
@@ -142,6 +168,29 @@
 }
 .aboutText p span {
   color: #2b2b2b;
+}
+
+.aboutActiveText h2 {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.aboutActiveText p {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.5)
+}
+.aboutActiveText p span {
+  color: #fff;
 }
 .cont {
   max-width: 1167px;
@@ -169,15 +218,27 @@
   margin: 1em auto;
 }
 
+.conCov {
+  position: relative;
+  max-width: 1103px;
+  width: 100%;
+  margin: 1em auto;
+}
+
 .connect {
   margin: 15em auto 0;
+  width: 500px;
+  text-align: center;
+}
+.conAct {
+  margin: 1em auto 0;
   width: 500px;
   text-align: center;
 }
 
 .conImage {
   position: absolute;
-  top: -200%;
+  top: -150%;
   right: 0;
   width: 309.46px;
   height: 300px;
@@ -191,6 +252,15 @@
   letter-spacing: 0.03em;
   color: #2b2b2b;
 }
+.conAct h1 {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
 .connect p {
   font-family: "Clash Grotesk";
   font-style: normal;
@@ -200,6 +270,18 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(43, 43, 43, 0.5);
+  width: 458px;
+}
+
+.conAct p {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.5);
   width: 458px;
 }
 .social {
@@ -212,4 +294,9 @@
 .socialIcon {
   font-size: 60px;
   color: #2b2b2b;
+}
+
+.conAct .socialIcon {
+  font-size: 60px;
+  color: #fff;
 }
