@@ -513,3 +513,51 @@
   font-size: 60px;
   color: #fff;
 }
+
+@media (max-width: 1600px) {
+  .header {
+    max-width: 98%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .nav,
+  .navAct {
+    max-width: 98%;
+  }
+  .headerLast {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1103px) {
+  .headerLast {
+    width: 100%;
+  }
+  .headerContent {
+    max-width: 100%;
+    margin: 3em auto 1em;
+  }
+  .ring {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerText h3 {
+    line-height: 45px;
+    font-size: 35px;
+  }
+  .headerText h1 {
+    line-height: 60px;
+    font-size: 50px;
+  }
+  .headerLast {
+      line-height: 60px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: ) {
+  
+}
