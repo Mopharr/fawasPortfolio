@@ -632,6 +632,47 @@
   }
   .workConFirst,
   .workConSec {
-    width: 60%;
+    width: 98%;
+  }
+  .workCap .workConSec {
+    display: none;
+  }
+  .workCap {
+    margin-bottom: 4em;
+  }
+  .conCov {
+    margin: 0 auto;
+  }
+  .connect,
+  .conAct {
+    margin: 0 auto 0;
+  }
+  .conImage {
+    display: none;
+  }
+  .connect h1,
+  .conAct h1 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .connect p,
+  .conAct p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .workCap img {
+    height: 175px;
+  }
+  .conAct {
+    width: 98%;
+  }
+    .connect p,
+  .conAct p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100% ;
   }
 }
