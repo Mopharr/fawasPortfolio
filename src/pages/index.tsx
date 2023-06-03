@@ -55,7 +55,8 @@ export default function Home({ mode, handleMode }: any) {
             )}
 
             <div className={styles.headerContent}>
-              {mode ? (
+              <div className={styles.newStyle}>
+   {mode ? (
                 <Image
                   src="/darkZig.svg"
                   alt=""
@@ -92,6 +93,8 @@ export default function Home({ mode, handleMode }: any) {
                   />
                 )}
               </div>
+              </div>
+           
 
               <div
                 className={`${

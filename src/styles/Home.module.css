@@ -553,11 +553,85 @@
     font-size: 50px;
   }
   .headerLast {
-      line-height: 60px;
+    line-height: 60px;
     font-size: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  
+  .nav a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .navAct a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .mode {
+    flex-direction: row;
+  }
+  .darkModee {
+    flex-direction: row;
+  }
+  .modeActive,
+  .darkModee .modeActive {
+    font-size: 20px;
+  }
+  .modeIcon,
+  .darkModee .modeIcon {
+    font-size: 20px;
+  }
+  .zig {
+    width: 42px;
+  }
+  .sideStar {
+    height: 35px;
+    width: 35px;
+  }
+  .newStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .headerText h3,
+  .darkHeaderContent h3 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .headerText h1,
+  .darkHeaderContent h1 {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .headerText p,
+  .darkHeaderContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .headerContent .round {
+    width: 66.05px;
+    height: 65.91px;
+  }
+  .headerLast {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .work h1,
+  .workAct h1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 2em;
+  }
+  .workCap h2 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .workIcon {
+    font-size: 25px;
+  }
+  .workConFirst,
+  .workConSec {
+    width: 60%;
+  }
 }
