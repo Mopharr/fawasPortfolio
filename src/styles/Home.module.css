@@ -281,6 +281,24 @@
   width: 80%;
   margin-left: auto;
 }
+.darkheaderLast {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 74px;
+  letter-spacing: -0.015em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #2b2b2b;
+  background-clip: text;
+  text-fill-color: #fff;
+  opacity: 0.8;
+  width: 80%;
+  margin-left: auto;
+}
 
 .ring {
   width: 493.14px;
@@ -525,13 +543,15 @@
   .navAct {
     max-width: 98%;
   }
-  .headerLast {
+  .headerLast,
+  .darkheaderLast {
     width: 90%;
   }
 }
 
 @media (max-width: 1103px) {
-  .headerLast {
+  .headerLast,
+  .darkheaderLast {
     width: 100%;
   }
   .headerContent {
@@ -552,7 +572,8 @@
     line-height: 60px;
     font-size: 50px;
   }
-  .headerLast {
+  .headerLast,
+  .darkheaderLast {
     line-height: 60px;
     font-size: 50px;
   }
@@ -613,7 +634,8 @@
     width: 66.05px;
     height: 65.91px;
   }
-  .headerLast {
+  .headerLast,
+  .darkheaderLast {
     font-size: 35px;
     line-height: 43px;
   }
@@ -660,19 +682,44 @@
     font-size: 16px;
     line-height: 20px;
   }
+  .workCap button,
+  .workAct .workCap button {
+    font-size: 12px;
+    line-height: 15px;
+    width: 100px;
+    height: 25px;
+  }
+  .workCap p,
+  .workAct .workCap p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 500px) {
+  .connect,
+  .conAct {
+    width: 98%;
+  }
   .workCap img {
     height: 175px;
   }
   .conAct {
     width: 98%;
   }
-    .connect p,
+  .connect p,
   .conAct p {
     font-size: 16px;
     line-height: 20px;
-    width: 100% ;
+    width: 100%;
+  }
+  .social {
+    width: 98%;
+    margin-top: 1em;
+  }
+  .conAct .socialIcon,
+  .socialIcon {
+    font-size: 30px;
   }
 }
+

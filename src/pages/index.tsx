@@ -56,45 +56,44 @@ export default function Home({ mode, handleMode }: any) {
 
             <div className={styles.headerContent}>
               <div className={styles.newStyle}>
-   {mode ? (
-                <Image
-                  src="/darkZig.svg"
-                  alt=""
-                  width={20}
-                  height={22}
-                  className={styles.zig}
-                />
-              ) : (
-                <Image
-                  src="/zig.svg"
-                  alt=""
-                  width={20}
-                  height={22}
-                  className={styles.zig}
-                />
-              )}
-
-              <div className={styles.starrCon}>
                 {mode ? (
                   <Image
-                    src="/darkStar.svg"
+                    src="/darkZig.svg"
                     alt=""
-                    width={52}
+                    width={20}
                     height={22}
-                    className={styles.sideStar}
+                    className={styles.zig}
                   />
                 ) : (
                   <Image
-                    src="/starr.svg"
+                    src="/zig.svg"
                     alt=""
-                    width={52}
+                    width={20}
                     height={22}
-                    className={styles.sideStar}
+                    className={styles.zig}
                   />
                 )}
+
+                <div className={styles.starrCon}>
+                  {mode ? (
+                    <Image
+                      src="/darkStar.svg"
+                      alt=""
+                      width={52}
+                      height={22}
+                      className={styles.sideStar}
+                    />
+                  ) : (
+                    <Image
+                      src="/starr.svg"
+                      alt=""
+                      width={52}
+                      height={22}
+                      className={styles.sideStar}
+                    />
+                  )}
+                </div>
               </div>
-              </div>
-           
 
               <div
                 className={`${
@@ -156,7 +155,9 @@ export default function Home({ mode, handleMode }: any) {
               />
             )}
           </header>
-          <h2 className={styles.headerLast}>
+          <h2 className={`${
+                  mode ? styles.darkheaderLast : styles.headerLast
+                }`}>
             THAT LAGOS ISLAND BOY THAT DESIGNS AWESOME STUFF
           </h2>
 
