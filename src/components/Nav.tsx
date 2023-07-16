@@ -8,7 +8,7 @@ const Nav = ({mode}: any) => {
       <Link href="/">Fawas.</Link>
       <ul className={styles.navItem}>
         <li>
-          <Link href="/">Work</Link>
+          <Link href="/work">Work</Link>
         </li>
         <li>
           <Link href="/about">About</Link>
