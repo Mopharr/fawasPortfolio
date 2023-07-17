@@ -101,8 +101,8 @@ export default function Home({ mode, handleMode }: any) {
                 }`}
               >
                 <div className={styles.title}>
-                  <h3>Hi, I’m Fawaz.</h3>
                   <Image src="/wace.svg" alt="" width={40} height={40} />
+                  <h3>Hi, I’m Fawaz.</h3>
                 </div>
                 <h1>
                   I Design, Listen To Hip-Hop, Speak Up For{" "}

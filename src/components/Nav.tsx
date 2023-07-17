@@ -5,7 +5,7 @@ import Link from "next/link";
 const Nav = ({mode}: any) => {
   return (
     <div className={`${mode ? styles.navAct : styles.nav}`}>
-      <Link href="/">Fawas.</Link>
+      <Link href="/">Fawaz.</Link>
       <ul className={styles.navItem}>
         <li>
           <Link href="/work">Work</Link>
