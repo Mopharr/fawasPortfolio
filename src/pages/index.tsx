@@ -155,11 +155,13 @@ export default function Home({ mode, handleMode }: any) {
               />
             )}
           </header>
-          <h2 className={`${
-                  mode ? styles.darkheaderLast : styles.headerLast
-                }`}>
-            THAT LAGOS ISLAND BOY THAT DESIGNS AWESOME STUFF
-          </h2>
+          <div className={styles.marqueeContainer}>
+            <h2
+              className={`${mode ? styles.darkheaderLast : styles.headerLast}`}
+            >
+              THAT LAGOS ISLAND BOY THAT DESIGNS AWESOME STUFF
+            </h2>
+          </div>
 
           <section className={`${mode ? styles.workAct : styles.work}`}>
             <h1>Work</h1>
@@ -179,7 +181,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>Product Design</button>
                 </div>
               </div>
-              <Image src="/img7.svg" width={22} height={22} alt="" />
+              <Image src="/scoop.png" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
               <div className={styles.workCon}>
@@ -199,7 +201,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>Research</button>
                 </div>
               </div>
-              <Image src="/img5.svg" width={22} height={22} alt="" />
+              <Image src="/grey.png" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
               <div className={styles.workCon}>
@@ -216,7 +218,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>UI Design</button>
                 </div>
               </div>
-              <Image src="/img4.svg" width={22} height={22} alt="" />
+              <Image src="/switch.png" width={22} height={22} alt="" />
             </div>
           </section>
 

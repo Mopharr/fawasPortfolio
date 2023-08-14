@@ -278,10 +278,35 @@
   background-clip: text;
   text-fill-color: #fff;
   opacity: 0.8;
-  width: 80%;
-  margin-left: auto;
+  /* width: 80%;
+  margin-left: auto; */
+}
+
+.marqueeContainer {
+  /* overflow: hidden; */
+  position: relative;
+  width: 50%;
+  /* height: 30px; */
+}
+
+.headerLast {
+  position: absolute;
+  white-space: nowrap;
+  transition: transform 10s linear;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .darkheaderLast {
+  /* width: 80%;
+  margin-left: auto; */
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
@@ -296,26 +321,24 @@
   background-clip: text;
   text-fill-color: #fff;
   opacity: 0.8;
-  width: 80%;
-  margin-left: auto;
 }
 
 .ring {
   width: 493.14px;
   height: 493.14px;
-  position: absolute;
+  position: fixed;
   bottom: -10%;
   right: 0%;
   z-index: 11;
 }
 
 .work {
-  margin: 2em auto;
+  margin: 10em auto 2em;
   max-width: 1103px;
   width: 100%;
 }
 .workAct {
-  margin: 2em auto;
+  margin: 10em auto 2em;
   max-width: 1103px;
   width: 100%;
 }
@@ -722,4 +745,3 @@
     font-size: 30px;
   }
 }
-
