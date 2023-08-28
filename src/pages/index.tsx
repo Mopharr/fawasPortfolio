@@ -183,7 +183,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>Product Design</button>
                 </div>
               </div>
-              <Image src="/scoop.png" width={22} height={22} alt="" />
+              <img src="/scoop.png" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
               <div className={styles.workCon}>
@@ -203,7 +203,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>Research</button>
                 </div>
               </div>
-              <Image src="/grey.png" width={22} height={22} alt="" />
+              <img src="/grey.png" width={22} height={22} alt="" />
             </div>
             <div className={styles.workCap}>
               <div className={styles.workCon}>
@@ -220,7 +220,7 @@ export default function Home({ mode, handleMode }: any) {
                   <button>UI Design</button>
                 </div>
               </div>
-              <Image src="/switch.png" width={22} height={22} alt="" />
+              <img src="/switch.png" width={22} height={22} alt="" />
             </div>
           </section>
 
