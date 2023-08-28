@@ -20,24 +20,11 @@
   gap: 0.5em;
   flex-direction: column;
 }
-.loadContent img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  animation: blink 2s infinite;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
 .loading h1 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 55px;
   letter-spacing: 0.03em;
   color: rgba(43, 43, 43, 0.5);
@@ -46,7 +33,6 @@
 
 .first {
   color: #000;
-  font-size: 19px;
   animation: icon 1s infinite;
   animation-timing-function: ease;
   animation-delay: 0s;

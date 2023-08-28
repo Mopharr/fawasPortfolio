@@ -119,23 +119,25 @@ export default function Home({ mode, handleMode }: any) {
                   phenomenon.
                 </p>
               </div>
-              {mode ? (
-                <Image
-                  src="/darkRound.svg"
-                  alt=""
-                  width={20}
-                  height={22}
-                  className={styles.round}
-                />
-              ) : (
-                <Image
-                  src="/img1.svg"
-                  alt=""
-                  width={20}
-                  height={22}
-                  className={styles.round}
-                />
-              )}
+              <div className="roDiv">
+                {mode ? (
+                  <Image
+                    src="/darkRound.svg"
+                    alt=""
+                    width={20}
+                    height={22}
+                    className={styles.round}
+                  />
+                ) : (
+                  <Image
+                    src="/img1.svg"
+                    alt=""
+                    width={20}
+                    height={22}
+                    className={styles.round}
+                  />
+                )}
+              </div>
             </div>
             {mode ? (
               <Image

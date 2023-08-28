@@ -161,11 +161,28 @@
   width: 55px;
   height: 55px;
   margin-left: auto;
+  animation: icon 2s infinite;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
+
+@keyframes icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .headerContent {
   max-width: 1103px;
   width: 100%;
-  margin: 1em auto;
+  margin: -3em auto 1em;
 }
 .title {
   display: flex;
@@ -178,7 +195,7 @@
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 55px;
   letter-spacing: 0.03em;
 }
@@ -209,10 +226,35 @@
   color: rgba(43, 43, 43, 0.5);
   margin-top: 0.5em;
 }
+.roDiv {
+  width: 80px;
+  height: 80px;
+}
+
 .headerContent .round {
-  width: 114.04px;
-  height: 113.69px;
+  width: 80.04px;
+  height: 80.69px;
   margin-top: 1em;
+  animation: rings 2s infinite;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+
+@keyframes rings {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .darkHeaderContent .title {
@@ -267,8 +309,8 @@
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
-  font-size: 60px;
-  line-height: 74px;
+  font-size: 50px;
+  line-height: 60px;
   letter-spacing: -0.015em;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: transparent;
@@ -278,24 +320,17 @@
   background-clip: text;
   text-fill-color: #fff;
   opacity: 0.8;
-  /* width: 80%;
-  margin-left: auto; */
 }
-
 .marqueeContainer {
-  /* overflow: hidden; */
   position: relative;
-  width: 50%;
-  /* height: 30px; */
+  width: 90px;
 }
-
 .headerLast {
   position: absolute;
   white-space: nowrap;
   transition: transform 10s linear;
   animation: scroll 10s linear infinite;
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -305,8 +340,6 @@
   }
 }
 .darkheaderLast {
-  /* width: 80%;
-  margin-left: auto; */
   font-family: "Clash Grotesk";
   font-style: normal;
   font-weight: 500;
@@ -324,9 +357,9 @@
 }
 
 .ring {
-  width: 493.14px;
-  height: 493.14px;
-  position: fixed;
+  width: 400px;
+  height: 400px;
+  position: absolute;
   bottom: -10%;
   right: 0%;
   z-index: 11;
@@ -566,10 +599,10 @@
   .navAct {
     max-width: 98%;
   }
-  .headerLast,
+  /* .headerLast,
   .darkheaderLast {
     width: 90%;
-  }
+  } */
 }
 
 @media (max-width: 1103px) {

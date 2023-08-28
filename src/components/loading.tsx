@@ -20,10 +20,11 @@ const Loading = () => {
       <div className={styles.loadContent}>
         <h1>Just a few seconds please...</h1>
         <div className={styles.lons}>
-          <TbInnerShadowBottomLeftFilled className={styles.first} />
-          <TbInnerShadowBottomLeftFilled  className={styles.second}/>
+          {/* <TbInnerShadowBottomLeftFilled  /> */}
+        <Image src="/Star4.png" alt="" width={17} height={18} className={styles.first}/>
+        <Image src="/Star4.png" alt="" width={17} height={18} className={styles.second}/>
+          {/* <TbInnerShadowBottomLeftFilled  className={styles.second}/> */}
         </div>
-        {/* <Image src="/img9.svg" alt="" width={22} height={18} /> */}
       </div>
     </div>
   );
